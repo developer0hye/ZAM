@@ -27,6 +27,7 @@ Learning Rate: 0.1
 | base line              | 72.98%      |
 | base line + CBAM         | 75.0%      |
 | base line + zero parameter channel(Avg & Max Pooling)       | x%      |
+| base line + zero parameter spatial(Avg & Max Pooling)       | x%      |
 | base line + ZCBAM(Avg Pooling)         | 73.53%      |
 | base line + ZCBAM(Max Pooling)       | x%      |
 | base line + ZCBAM(Avg & Max Pooling)         | 74.59%      |
