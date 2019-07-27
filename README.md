@@ -34,14 +34,14 @@ Learning Rate: 0.1
 
 | Model             | Acc.        |
 | ----------------- | ----------- |
-| base line              | 86.62%      |
-| base line + CBAM -- **1st**          | **86.93%**     |
-| base line + zero parameter channel(Avg Pooling)       | 86.24%     |
-| base line + zero parameter channel(Max Pooling)       | 86.45%     |
-| base line + zero parameter channel(Avg & Max Pooling)       | 86.07%  |
-| base line + zero parameter spatial(Avg Pooling)       | 86.68%      |
-| base line + zero parameter spatial(Max Pooling)       | 86.84%      |
- base line + zero parameter spatial(Avg & Max Pooling)       | 86.53%     |
-| base line + zero parameter channel/spatial(Avg Pooling)         | 86.75% |
-| base line + zero parameter channel/spatial(Max Pooling)       | 86.5%|
-| base line + zero parameter channel/spatial(Avg & Max Pooling)         |86.63%|
+| base line              | 86.72%      |
+| base line + CBAM           |   |
+| base line + zero parameter channel(Avg Pooling)       |     |
+| base line + zero parameter channel(Max Pooling)       |    |
+| base line + zero parameter channel(Avg & Max Pooling)       |   |
+| base line + zero parameter spatial(Avg Pooling)       |       |
+| base line + zero parameter spatial(Max Pooling)       |       |
+ base line + zero parameter spatial(Avg & Max Pooling)       |      |
+| base line + zero parameter channel/spatial(Avg Pooling)         |  |
+| base line + zero parameter channel/spatial(Max Pooling)       | |
+| base line + zero parameter channel/spatial(Avg & Max Pooling)         ||
