@@ -6,21 +6,18 @@ ZCBAM: Zero parameter Convolutional Block Attention Module
 ## Network
 
 
-## ZBAM
+## ZCBAM
 
-### ZCA: Zero Parameter Channel Attention
+### ZCA: Zero parameter Channel Attention
 
-### ZSA: Zero Parameter Spatial Attention
+### ZSA: Zero parameter Spatial Attention
 
 ## Dataset
 
 ### CIFAR-10
-The [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. 
+The [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html) dataset consists of 60000 32x32 colour images in 100 classes, with 6000 images per class. 
 
 There are 50000 training images and 10000 test images.
-
-![CIFAR - 10](https://user-images.githubusercontent.com/35001605/61969431-77aae100-b015-11e9-901e-e20740b523b9.PNG)
-
 
 ## Training Rules
 
