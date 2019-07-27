@@ -15,9 +15,9 @@ ZCBAM: Zero parameter Convolutional Block Attention Module
 ## Dataset
 
 ### CIFAR-10
-The [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html) dataset consists of 60000 32x32 colour images in 100 classes, with 6000 images per class. 
 
-There are 50000 training images and 10000 test images.
+This dataset is just like the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html), except it has 100 classes containing 600 images each. There are 500 training images and 100 testing images per class. The 100 classes in the CIFAR-100 are grouped into 20 superclasses. Each image comes with a "fine" label (the class to which it belongs) and a "coarse" label (the superclass to which it belongs).
+
 
 ## Training Rules
 
