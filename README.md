@@ -32,7 +32,7 @@ Learning Rate: 0.1
 | Model             | Acc.        |
 | ----------------- | ----------- |
 | base line              | 76.36%      |
-| base line + CBAM           |   |
+| base line + CBAM           |  76.20% |
 | base line + zero parameter channel(Avg Pooling)       |     |
 | base line + zero parameter channel(Max Pooling)       |    |
 | base line + zero parameter channel(Avg & Max Pooling)       |   |
