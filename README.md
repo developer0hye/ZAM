@@ -29,8 +29,8 @@ Learning Rate: 0.1
 
 ## Experimental Results
 
-| Model             | Acc0.        | Acc1.        |
-| ----------------- | ----------- | ----------- |
-| resnet18 (fine-tuned for cifar100(3x32x32)| 76.36%      | 75.94%      |
-| resnet18 + CBAM           |  76.20% | 76.55%      |
-| resnet18 + ZCBAM           |  76.46% |       %|
+| Model             | Acc0.        | Acc1.        | Acc2.        |
+| ----------------- | ----------- | ----------- | ----------- |
+| resnet18 (fine-tuned for cifar100(3x32x32)| 76.36%      | 75.94%      | 76.38%      |
+| resnet18 + CBAM           |  76.20% | 76.55%      |       %|
+| resnet18 + ZCBAM           |  76.46% |       %|       %|
