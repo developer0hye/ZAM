@@ -31,6 +31,6 @@ Learning Rate: 0.1
 
 | Model             | Acc.        |
 | ----------------- | ----------- |
-| resnet18              | 76.36%      |
+| resnet18 (fine-tuned for cifar100(3x32x32)| 76.36%      |
 | resnet18 + CBAM           |  76.20% |
 | resnet18 + ZCBAM           |  76.46% |
