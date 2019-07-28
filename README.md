@@ -31,6 +31,6 @@ Learning Rate: 0.1
 
 | Model             | Acc.        |
 | ----------------- | ----------- |
-| base line              | 76.36%      |
-| base line + CBAM           |  76.20% |
-| base line + ZCBAM           |  76.46% |
+| resnet18              | 76.36%      |
+| resnet18 + CBAM           |  76.20% |
+| resnet18 + ZCBAM           |  76.46% |
