@@ -1,16 +1,14 @@
 # ZCBAM
 ZCBAM: Zero parameter Convolutional Block Attention Module
 
+It is ispired from [CBAM](https://arxiv.org/pdf/1807.06521.pdf) and [BAM](https://arxiv.org/abs/1807.06514). 
 
-
-## Network
-
-
-## ZCBAM
+## ZCBAM Module
 
 ### ZCA: Zero parameter Channel Attention
 
 ### ZSA: Zero parameter Spatial Attention
+
 
 ## Dataset
 
@@ -21,7 +19,7 @@ This dataset is just like the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.
 
 ## Training Rules
 
-Epochs: 100
+Epochs: 200
 
 Batch Size: 128
 
@@ -33,4 +31,6 @@ Learning Rate: 0.1
 | ----------------- | ----------- | ----------- | ----------- | ----------- |
 | resnet18 (fine-tuned for cifar100(3x32x32)| 76.36%      | 75.94%      | 76.38%      | 76.03%      |
 | resnet18 + CBAM           |  76.20% | 76.55%      |       76.23%| 76.26%      |
-| resnet18 + ZCBAM           |  76.46% |       76.95%|       76.30%| -%      |
+| resnet18 + ZCBAM           |  76.46% |       76.95%|       76.30%| 76.34%      |
+
+## References
