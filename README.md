@@ -3,6 +3,10 @@ ZCBAM: Zero parameter Convolutional Block Attention Module
 
 It is ispired from [CBAM](https://arxiv.org/pdf/1807.06521.pdf) and [BAM](https://arxiv.org/abs/1807.06514). 
 
+My work is motivated by the following one question.
+
+Is it possible to train whole network with attention module without additional parameter?
+
 ## ZCBAM Module
 
 ### ZCA: Zero parameter Channel Attention
