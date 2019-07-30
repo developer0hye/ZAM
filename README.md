@@ -11,11 +11,11 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 ### ZCA: Zero parameter Channel Attention
 
-![ZCA](https://user-images.githubusercontent.com/35001605/62105887-a14a5d80-b2de-11e9-9657-462d033b9abc.png)
+<img src="./figures/ZCA.png" width="50%">
 
 ### ZSA: Zero parameter Spatial Attention
 
-![ZSA](https://user-images.githubusercontent.com/35001605/62105899-a4dde480-b2de-11e9-8e08-c92c79d3e206.png)
+<img src="./figures/ZSA.png" width="50%">
 
 ### Residual Units
 
