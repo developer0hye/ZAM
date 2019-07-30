@@ -5,7 +5,7 @@ It is ispired from [CBAM](https://arxiv.org/pdf/1807.06521.pdf) and [BAM](https:
 
 My work is motivated by the following one question.
 
-Is it possible to improve performance of CNNs using attention module that has no additional parameters?
+Is it possible to improve performance of CNNs using attention module that has no additional parameters(weight and bias)?
 
 ## ZCBAM Module
 
