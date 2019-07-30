@@ -43,6 +43,14 @@ Learning Rate: 0.1
 | resnet18 + CBAM |11.39M     |  76.20% | 76.55%      |       76.23%| 76.26%      |76.16%      |76.55%      |76.33% |
 | resnet18 + ZCBAM |  **11.22M**     | 76.46% |       76.95%|       76.62%| 76.34%      |76.12%      |**76.95%**      |**76.57%**|
 
+## Run
+
+```
+python train.py -net resnet18
+python train.py -net resnetcbam18
+python train.py -net resnetzcbam18
+```
+
 ## Reference
 
 - Paper: [CBAM: Convolutional Block Attention Module](https://arxiv.org/pdf/1807.06521)
