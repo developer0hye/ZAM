@@ -39,6 +39,8 @@ Learning Rate: 0.1
 
 - Paper: [CBAM: Convolutional Block Attention Module](https://arxiv.org/pdf/1807.06521)
 - Paper: [BAM: Bottleneck Attention Module](https://arxiv.org/abs/1807.06514)
-- Repository: [luuuyi/CBAM.PyTorch](https://github.com/luuuyi/CBAM.PyTorch)
 - Repository: [Jongchan/attention-module](https://github.com/Jongchan/attention-module)
+- Repository: [luuuyi/CBAM.PyTorch](https://github.com/luuuyi/CBAM.PyTorch)
+- Repository: [kobiso/CBAM-tensorflow](https://github.com/kobiso/CBAM-tensorflow)
 - Repository: [weiaicunzai/pytorch-cifar100](https://github.com/weiaicunzai/pytorch-cifar100)
+
