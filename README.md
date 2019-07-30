@@ -33,7 +33,11 @@ Epochs: 200
 
 Batch Size: 128
 
-Learning Rate: 0.1
+Learning Rate:
+- 0.1, if epoch < 60
+- 0.1 * 0.2^1, if 60 <= epoch < 120
+- 0.1 * 0.2^2, if 120 <= epoch < 160
+- 0.1 * 0.2^3, if epoch >= 160
 
 ## Experimental Results
 
