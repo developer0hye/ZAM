@@ -21,7 +21,7 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 ### Residual Units
 
-![Residual Units](https://user-images.githubusercontent.com/35001605/62101421-5cb7c580-b2d0-11e9-919b-62efbbdc4cd6.png)
+<img src="./figures/Residual Units.png" width="80%">
 
 ## Dataset: CIFAR- 100
 
