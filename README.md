@@ -9,11 +9,13 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 ## ZCBAM Module
 
-### ZCA: Zero parameter Channel Attention
+<img src="./figures/ZCBAM.png" width="80%">
+
+### ZCA: Zero parameter Channel Attention Module
 
 <img src="./figures/ZCA.png" width="50%">
 
-### ZSA: Zero parameter Spatial Attention
+### ZSA: Zero parameter Spatial Attention Module
 
 <img src="./figures/ZSA.png" width="50%">
 
