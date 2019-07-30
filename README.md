@@ -15,6 +15,8 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 ### Residual Units
 
+![Residual Units](https://user-images.githubusercontent.com/35001605/62101421-5cb7c580-b2d0-11e9-919b-62efbbdc4cd6.png)
+
 ## Dataset: CIFAR- 100
 
 This dataset is just like the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html), except it has 100 classes containing 600 images each. There are 500 training images and 100 testing images per class. The 100 classes in the CIFAR-100 are grouped into 20 superclasses. Each image comes with a "fine" label (the class to which it belongs) and a "coarse" label (the superclass to which it belongs).
