@@ -4,6 +4,7 @@
 """ train network using pytorch
 
 author baiyu
+modified by yonghye kwon
 """
 
 import os
@@ -19,10 +20,7 @@ import torchvision
 import torchvision.transforms as transforms
 
 from torch.utils.data import DataLoader
-#from dataset import *
 from torch.autograd import Variable
-
-from tensorboardX import SummaryWriter
 
 from conf import settings
 from utils import get_network, get_training_dataloader, get_test_dataloader, WarmUpLR
