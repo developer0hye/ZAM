@@ -47,7 +47,7 @@ Learning Rate:
 | resnet18 + CBAM |11.39M     |  76.20% | 76.55%      |       76.23%| 76.26%      |76.16%      |76.55%      |76.33% |
 | resnet18 + ZCBAM |  **11.22M**     | 76.46% |       76.95%|       76.62%| 76.34%      |76.12%      |**76.95%**      |**76.57%**|
 
-The total number of parameters of resnet18 and resnet 18 with ZCBAM is same, but the resnet18 with ZCBAM outperformes resnet18 in terms of the accuracy and overall overhead of ZCBAM is quite small in terms of computation too.
+The total number of parameters of resnet18 with ZCBAM is the same as resnet18, but the resnet18 with ZCBAM outperformes resnet18 in terms of the accuracy and overall overhead of ZCBAM is quite small in terms of computation too.
 
 ## Run
 
