@@ -128,8 +128,6 @@ if __name__ == '__main__':
     warmup_scheduler = WarmUpLR(optimizer, iter_per_epoch * args.warm)
     checkpoint_path = os.path.join(settings.CHECKPOINT_PATH, args.net)
 
-    input_tensor = torch.Tensor(12, 3, 32, 32).cuda()
-
     #create checkpoint folder to save model
     if not os.path.exists(checkpoint_path):
         os.makedirs(checkpoint_path)
