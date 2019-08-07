@@ -23,11 +23,13 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 <img src="./figures/Residual Units.png" width="80%">
 
-## Dataset: CIFAR- 100
+## Experimental Results
+
+### Dataset: CIFAR- 100
 
 This dataset is just like the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html), except it has 100 classes containing 600 images each. There are 500 training images and 100 testing images per class. The 100 classes in the CIFAR-100 are grouped into 20 superclasses. Each image comes with a "fine" label (the class to which it belongs) and a "coarse" label (the superclass to which it belongs).
 
-## Training Rules
+### Training Rules
 
 Epochs: 200
 
@@ -39,8 +41,7 @@ Learning Rate:
 - 0.1 * 0.2^2, if 120 <= epoch < 160
 - 0.1 * 0.2^3, if epoch >= 160
 
-## Experimental Results
-
+### Resnet
 | Model| Param.| Acc1.| Acc2.| Acc3.| Acc4.| Acc5.| Best Acc.| Avg Acc.|
 | ----------------- | ----------- | ----------- | ----------- | ----------- | ----------- |----------- |----------- |----------- |
 | resnet18 | 11.22M      | 76.36%      | 75.94%      | 76.38%      | 76.03%      |76.37%      |76.38%      |76.22% |
@@ -50,6 +51,16 @@ Learning Rate:
 | with ZCBAM(Avg&Max) |  **11.22M**     | 76.46% |       76.95%|       76.62%| 76.34%      |76.12%      |**76.95%**      |76.50%|
 
 The total number of parameters of resnet18 with ZCBAM is the same as resnet18, but the resnet18 with ZCBAM outperformes resnet18 in terms of the accuracy and overall overhead of ZCBAM is quite small in terms of computation too.
+
+This motivates me to apply our proposed module ZCBAM to the light-weight network, MobileNet.
+
+### Mobilenet
+| Model| Param.| Acc1.| Acc2.| Acc3.| Acc4.| Acc5.| Best Acc.| Avg Acc.|
+| ----------------- | ----------- | ----------- | ----------- | ----------- | ----------- |----------- |----------- |----------- |
+| mobilenet |     | 73.03%      | -%      | -%      | -%      |-%      |-%      |-% |
+| with CBAM |     |  -% | -%      |       -%| -%      |-%      |-%      |-% |
+| with ZCBAM(Avg&Max) |      | -% |       -%|       -%| -%      |-%      |-%      |-%|
+
 
 ## Run
 
