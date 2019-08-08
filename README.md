@@ -57,8 +57,8 @@ This motivates me to apply our proposed module ZCBAM to the light-weight network
 ### Mobilenet
 | Model| Param.| Acc1.| Acc2.| Acc3.| Acc4.| Acc5.| Best Acc.| Avg Acc.|
 | ----------------- | ----------- | ----------- | ----------- | ----------- | ----------- |----------- |----------- |----------- |
-| mobilenet |     | 73.03%      | -%      | -%      | -%      |-%      |-%      |-% |
-| with CBAM |     |  -% | -%      |       -%| -%      |-%      |-%      |-% |
+| mobilenet |     | 73.03%      | 72.92%      | 73.08%      | 72.89%      | 72.83%      |73.08%      |-% |
+| with CBAM |     |  75.65% | 75.11%      |  75.07%| -%      |-%      |-%      |-% |
 | with ZCBAM(Avg&Max) |      | -% |       -%|       -%| -%      |-%      |-%      |-%|
 
 
