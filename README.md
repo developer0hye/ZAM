@@ -75,9 +75,11 @@ python train.py -net resnetzcbam18
 - Paper: [CBAM: Convolutional Block Attention Module](https://arxiv.org/pdf/1807.06521)
 - Paper: [BAM: Bottleneck Attention Module](https://arxiv.org/abs/1807.06514)
 - Paper: [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
+- Paper: [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861)
 - Repository: [Jongchan/attention-module](https://github.com/Jongchan/attention-module)
 - Repository: [luuuyi/CBAM.PyTorch](https://github.com/luuuyi/CBAM.PyTorch)
 - Repository: [kobiso/CBAM-tensorflow](https://github.com/kobiso/CBAM-tensorflow)
 - Repository: [weiaicunzai/pytorch-cifar100](https://github.com/weiaicunzai/pytorch-cifar100)
+- Repository: [marvis/pytorch-mobilenet](https://github.com/marvis/pytorch-mobilenet)
 - Dataset: [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html)
 
