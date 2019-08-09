@@ -52,7 +52,7 @@ Learning Rate:
 
 The total number of parameters of resnet18 with ZCBAM is the same as resnet18, but the resnet18 with ZCBAM outperformes resnet18 in terms of the accuracy and overall overhead of ZCBAM is quite small in terms of computation too.
 
-This motivates me to apply our proposed module ZCBAM to the light-weight network, MobileNet.
+This motivates me to apply ZCBAM to the light-weight network, MobileNet.
 
 ### Mobilenet
 | Model| Param.| Acc1.| Acc2.| Acc3.| Acc4.| Acc5.| Best Acc.| Avg Acc.|
