@@ -79,6 +79,12 @@ python train.py -net resnetcbam18
 python train.py -net resnetzcbam18
 ```
 
+## Conclusion
+
+Use CBAM.
+
+You'll have more energy. Your skin is clearer. Your eye sight has improved.
+
 ## Reference
 
 - Paper: [CBAM: Convolutional Block Attention Module](https://arxiv.org/pdf/1807.06521)
