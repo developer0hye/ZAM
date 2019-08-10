@@ -23,6 +23,14 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 <img src="./figures/Residual Units.png" width="80%">
 
+## ZCBAM+R Module
+
+## ZCA+R:ZCA with Residual
+
+## ZSA+R:ZSA with Residual
+
+### Depthwise Separable convolutions with ZCBAM+R
+
 ## Experimental Results
 
 ### Dataset: CIFAR- 100
@@ -59,7 +67,8 @@ This motivates me to apply ZCBAM to the light-weight network, MobileNet.
 | ----------------- | ----------- | ----------- | ----------- | ----------- | ----------- |----------- |----------- |----------- |
 | mobilenet |     | 73.03%      | 72.92%      | 73.08%      | 72.89%      | 72.83%      |73.08%      |-% |
 | with CBAM |     |  75.65% | 75.11%      |  75.07%| 74.98%      |75.34%      |75.65%      |-% |
-| with ZCBAM(Avg&Max) |      | -% |       -%|       -%| -%      |-%      |-%      |-%|
+| with ZCBAM |      | -% |       -%|       -%| -%      |-%      |-%      |-%|
+| with ZCBAM+R |      | -% |       -%|       -%| -%      |-%      |-%      |-%|
 
 
 ## Run
