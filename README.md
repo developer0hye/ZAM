@@ -66,9 +66,9 @@ This motivates me to apply ZCBAM to the light-weight network, MobileNet.
 | Model| Param.| Acc1.| Acc2.| Acc3.| Acc4.| Acc5.| Best Acc.| Avg Acc.|
 | ----------------- | ----------- | ----------- | ----------- | ----------- | ----------- |----------- |----------- |----------- |
 | mobilenet |     | 73.03%      | 72.92%      | 73.08%      | 72.89%      | 72.83%      |73.08%      |-% |
-| with CBAM |     |  75.65% | 75.11%      |  75.07%| 74.98%      |75.34%      |75.65%      |-% |
-| with ZCBAM |      | -% |       -%|       -%| -%      |-%      |-%      |-%|
-| with ZCBAM+R |      | 73.59% |       73.44%|  73.68%| 73.27%      | 73.51%      |73.68%      |-%|
+| with CBAM |     |  75.65% | 75.11%      |  75.07%| 74.98%      |75.34%      |**75.65%**      |-% |
+| with ZCBAM |      | 70.82% | 70.12%|       -%| -%      |-%      |-%      |-%|
+| with ZCBAM+R |      | 73.59% |  73.44%|  73.68%| 73.27%| 73.51%|73.68%      |-%|
 
 
 ## Run
@@ -83,7 +83,7 @@ python train.py -net resnetzcbam18
 
 Use CBAM.
 
-You'll have more energy. Your skin is clearer. Your eye sight has improved.
+You'll have more energy. Your skin is clearer. Your eye sight will have improved.
 
 ## Reference
 
