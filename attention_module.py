@@ -77,15 +77,16 @@ class ZeroSpatialAttention(nn.Module):
         return self.sigmoid(avg_out + max_out)
     
 class ZCBAM(nn.Module):
-    def __init__(self):
+    def __init__(self, add_residual = False):
         super(ZCBAM, self).__init__()
 
         self.ca = ZeroChannelAttention()
         self.sa = ZeroSpatialAttention()
+        self.add_residual = add_residual
         
     def forward(self, x):
         
-        out = x * self.ca(x)
-        out = out * self.sa(out)
+        out = x + x * self.ca(x) if self.add_residual else x * self.ca(x)
+        out = out + out * self.sa(out) if self.add_residual else out * self.sa(out)
         
         return out
