@@ -61,6 +61,7 @@ The total number of parameters of resnet18 with ZCBAM is the same as resnet18, b
 This motivates me to apply ZCBAM to the light-weight network, MobileNet.
 
 ### MobileNet
+
 | Model| Param.| Acc1.| Acc2.| Acc3.| Acc4.| Acc5.| Best Acc.| Avg Acc.|
 | ----------------- | ----------- | ----------- | ----------- | ----------- | ----------- |----------- |----------- |----------- |
 | MobileNet |   3.3M  | 73.03%      | 72.92%      | 73.08%      | 72.89%      | 72.83%      |73.08%      |72.95% |
@@ -75,7 +76,10 @@ This motivates me to apply ZCBAM to the light-weight network, MobileNet.
 python train.py -net resnet18
 python train.py -net resnetcbam18
 python train.py -net resnetzcbam18
-```
+python train.py -net mobilenet
+python train.py -net mobilenetcbam
+python train.py -net mobilenetzcbam
+``` 
 
 ## Conclusion
 
