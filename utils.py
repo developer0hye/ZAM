@@ -29,6 +29,12 @@ def get_network(args, use_gpu=True):
         net = ResNetCBAM18()
     elif args.net == 'resnetzcbam18':
         net = ResNetZCBAM18()
+    elif args.net == 'mobilenet':
+        net = MobileNet()
+    elif args.net == 'mobilenetcbam':
+        net = MobileNetCBAM()
+    elif args.net == 'mobilenetzcbam':
+        net = MobileNetZCBAM()
     else:
         print('the network name you have entered is not supported yet')
         sys.exit()
