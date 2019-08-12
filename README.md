@@ -25,9 +25,6 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 ## ZCBAM+R Module
 
-## ZCA+R:ZCA with Residual
-
-## ZSA+R:ZSA with Residual
 
 ### Depthwise Separable convolutions with ZCBAM+R
 
