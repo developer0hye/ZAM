@@ -9,7 +9,7 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 ## ZAM Module
 
-<img src="./figures/ZCBAM.png" width="80%">
+<img src="./figures/ZAM.png" width="80%">
 
 ### ZCA: Zero parameter Channel Attention Module
 
@@ -23,9 +23,9 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 <img src="./figures/Residual Units.png" width="80%">
 
-## ZCBAM+R Module
+## ZAM+R Module
 
-<img src="./figures/ZCBAM+R.png" width="80%">
+<img src="./figures/ZAM+R.png" width="80%">
 
 ### Depthwise Separable convolutions with ZAM+R
 
