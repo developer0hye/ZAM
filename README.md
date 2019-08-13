@@ -13,11 +13,11 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 Yeah... I know... my drowing skills are very good.
 
-### Channel Attention Module in ZAM
+### ZCA: Channel Attention Module in ZAM
 
 <img src="./figures/ZCA.png" width="50%">
 
-### Spatial Attention Module in ZAM
+### ZSA: Spatial Attention Module in ZAM
 
 <img src="./figures/ZSA.png" width="50%">
 
