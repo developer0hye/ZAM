@@ -74,7 +74,6 @@ This motivates me to apply ZAM to the light-weight network, MobileNet.
 | with ZAM |  3.3M    | 71.11% | 71.74%|       71.61%| 71.09%      |71.75%      |71.75%      |71.46%|
 | with ZAM+R | **3.3M**     | 73.59% |  73.44%|  73.68%| 73.27%| 73.51%|73.68%      |73.50%|
 
-
 ## Run
 
 ```
