@@ -1,11 +1,11 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from attention_module import ZCBAM
+from attention_module import ZAM
 
-class MobileNetZCBAM(nn.Module):
+class MobileNetZAM(nn.Module):
     def __init__(self, classes = 100):
-        super(MobileNetZCBAM, self).__init__()
+        super(MobileNetZAM, self).__init__()
 
         def conv_bn(inp, oup, stride):
             return nn.Sequential(
@@ -21,7 +21,7 @@ class MobileNetZCBAM(nn.Module):
                 nn.ReLU(inplace=True),
                 nn.Conv2d(inp, oup, 1, 1, 0, bias=False),
                 nn.BatchNorm2d(oup),
-                ZCBAM(add_residual = True),
+                ZAM(add_residual = True),
                 nn.ReLU(inplace=True),
             )
 
