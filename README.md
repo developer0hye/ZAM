@@ -1,5 +1,5 @@
-# ZCBAM
-ZCBAM: Zero parameter Convolutional Block Attention Module
+# ZAM
+ZAM: Zero parameter Attention Module
 
 It is ispired from [CBAM](https://arxiv.org/pdf/1807.06521.pdf) and [BAM](https://arxiv.org/abs/1807.06514). 
 
@@ -7,7 +7,7 @@ My work is motivated by the following one question.
 
 Is it possible to improve performance of CNNs using attention module that has no additional parameters(weight and bias)?
 
-## ZCBAM Module
+## ZAM Module
 
 <img src="./figures/ZCBAM.png" width="80%">
 
@@ -27,7 +27,7 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 <img src="./figures/ZCBAM+R.png" width="80%">
 
-### Depthwise Separable convolutions with ZCBAM+R
+### Depthwise Separable convolutions with ZAM+R
 
 <img src="./figures/DWConvModule.png" width="80%">
 
@@ -55,13 +55,13 @@ Learning Rate:
 | ----------------- | ----------- | ----------- | ----------- | ----------- | ----------- |----------- |----------- |----------- |
 | ResNet18 | 11.22M      | 76.36%      | 75.94%      | 76.38%      | 76.03%      |76.37%      |76.38%      |76.22% |
 | with CBAM |11.39M     |  76.20% | 76.55%      |       76.23%| 76.26%      |76.16%      |76.55%      |76.28% |
-| with ZCBAM(Max) |  11.22M     | 75.64% | 75.97%|       76.20%| 75.99%      | 75.87%      |76.20%      |75.93%|
-| with ZCBAM(Avg) |  11.22M     | 76.89% | 76.77%|       76.51%| 76.45%      | 76.68%      |76.89%      |**76.66%**|
-| with ZCBAM(Avg&Max) |  **11.22M**     | 76.46% |       76.95%|       76.62%| 76.34%      |76.12%      |**76.95%**      |76.50%|
+| with ZAM(Max) |  11.22M     | 75.64% | 75.97%|       76.20%| 75.99%      | 75.87%      |76.20%      |75.93%|
+| with ZAM(Avg) |  11.22M     | 76.89% | 76.77%|       76.51%| 76.45%      | 76.68%      |76.89%      |**76.66%**|
+| with ZAM(Avg&Max) |  **11.22M**     | 76.46% |       76.95%|       76.62%| 76.34%      |76.12%      |**76.95%**      |76.50%|
 
-The total number of parameters of resnet18 with ZCBAM is the same as resnet18, but the resnet18 with ZCBAM outperformes resnet18 in terms of the accuracy and overall overhead of ZCBAM is quite small in terms of computation too.
+The total number of parameters of resnet18 with ZAM is the same as resnet18, but the resnet18 with ZAM outperformes resnet18 in terms of the accuracy and overall overhead of ZAM is quite small in terms of computation too.
 
-This motivates me to apply ZCBAM to the light-weight network, MobileNet.
+This motivates me to apply ZAM to the light-weight network, MobileNet.
 
 ### MobileNet
 
@@ -69,8 +69,8 @@ This motivates me to apply ZCBAM to the light-weight network, MobileNet.
 | ----------------- | ----------- | ----------- | ----------- | ----------- | ----------- |----------- |----------- |----------- |
 | MobileNet |   3.3M  | 73.03%      | 72.92%      | 73.08%      | 72.89%      | 72.83%      |73.08%      |72.95% |
 | with CBAM |   4.3M  |  75.65% | 75.11%      |  75.07%| 74.98%      |75.34%      |**75.65%**      |**75.23%**|
-| with ZCBAM |  3.3M    | 71.11% | 71.74%|       71.61%| 71.09%      |71.75%      |71.75%      |71.46%|
-| with ZCBAM+R | **3.3M**     | 73.59% |  73.44%|  73.68%| 73.27%| 73.51%|73.68%      |73.50%|
+| with ZAM |  3.3M    | 71.11% | 71.74%|       71.61%| 71.09%      |71.75%      |71.75%      |71.46%|
+| with ZAM+R | **3.3M**     | 73.59% |  73.44%|  73.68%| 73.27%| 73.51%|73.68%      |73.50%|
 
 
 ## Run
@@ -86,9 +86,6 @@ python train.py -net mobilenetzcbam
 
 ## Conclusion
 
-Use CBAM.
-
-You'll have more energy. Your skin is clearer. Your eye sight will have improved.
 
 ## Reference
 
