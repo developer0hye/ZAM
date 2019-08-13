@@ -80,10 +80,10 @@ This motivates me to apply ZAM to the light-weight network, MobileNet.
 ```
 python train.py -net resnet18
 python train.py -net resnetcbam18
-python train.py -net resnetzcbam18
+python train.py -net resnetzam18
 python train.py -net mobilenet
 python train.py -net mobilenetcbam
-python train.py -net mobilenetzcbam
+python train.py -net mobilenetzam
 ``` 
 
 ## Conclusion
