@@ -53,7 +53,7 @@ class CBAM(nn.Module):
         
         return out
 
-## ZCBAM ##    
+## ZAM ##    
 class ZeroChannelAttention(nn.Module):
     def __init__(self):
         super(ZeroChannelAttention, self).__init__()
@@ -76,9 +76,9 @@ class ZeroSpatialAttention(nn.Module):
         max_out, _ = torch.max(x, dim=1, keepdim=True)
         return self.sigmoid(avg_out + max_out)
     
-class ZCBAM(nn.Module):
+class ZAM(nn.Module):
     def __init__(self, add_residual = False):
-        super(ZCBAM, self).__init__()
+        super(ZAM, self).__init__()
 
         self.ca = ZeroChannelAttention()
         self.sa = ZeroSpatialAttention()
