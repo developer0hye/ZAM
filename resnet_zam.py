@@ -9,7 +9,7 @@ Reference:
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from attention_module import ZCBAM
+from attention_module import ZAM
 
 
 class BasicBlock(nn.Module):
@@ -28,13 +28,13 @@ class BasicBlock(nn.Module):
                 nn.BatchNorm2d(self.expansion*planes)
             )
         
-        self.zcbam = ZCBAM()
+        self.zam = ZAM()
 
     def forward(self, x):
         residual = x
         out = F.relu(self.bn1(self.conv1(x)))
         out = self.bn2(self.conv2(out))
-        out = self.zcbam(out)
+        out = self.zam(out)
         out += self.shortcut(residual)
         out = F.relu(out)
         return out
@@ -57,22 +57,22 @@ class Bottleneck(nn.Module):
                 nn.Conv2d(in_planes, self.expansion*planes, kernel_size=1, stride=stride, bias=False),
                 nn.BatchNorm2d(self.expansion*planes)
             )
-        self.zcbam = ZCBAM()
+        self.zam = ZAM()
         
     def forward(self, x):
         residual = x
         out = F.relu(self.bn1(self.conv1(x)))
         out = F.relu(self.bn2(self.conv2(out)))
         out = self.bn3(self.conv3(out))
-        out = self.zcbam(out)
+        out = self.zam(out)
         out += self.shortcut(residual)
         out = F.relu(out)
         return out
 
 
-class ResNetZCBAM(nn.Module):
+class ResNetZAM(nn.Module):
     def __init__(self, block, num_blocks, num_classes=100):
-        super(ResNetZCBAM, self).__init__()
+        super(ResNetZAM, self).__init__()
         self.in_planes = 64
 
         self.conv1 = nn.Conv2d(3, 64, kernel_size=3, stride=1, padding=1, bias=False)
@@ -103,17 +103,17 @@ class ResNetZCBAM(nn.Module):
         return out
 
 
-def ResNetZCBAM18():
-    return ResNetZCBAM(BasicBlock, [2,2,2,2])
+def ResNetZAM18():
+    return ResNetZAM(BasicBlock, [2,2,2,2])
 
-def ResNetZCBAM34():
-    return ResNetZCBAM(BasicBlock, [3,4,6,3])
+def ResNetZAM34():
+    return ResNetZAM(BasicBlock, [3,4,6,3])
 
-def ResNetZCBAM50():
-    return ResNetZCBAM(Bottleneck, [3,4,6,3])
+def ResNetZAM50():
+    return ResNetZAM(Bottleneck, [3,4,6,3])
 
-def ResNetZCBAM101():
-    return ResNetZCBAM(Bottleneck, [3,4,23,3])
+def ResNetZAM101():
+    return ResNetZAM(Bottleneck, [3,4,23,3])
 
-def ResNetZCBAM152():
-    return ResNetZCBAM(Bottleneck, [3,8,36,3])
+def ResNetZAM152():
+    return ResNetZAM(Bottleneck, [3,8,36,3])
