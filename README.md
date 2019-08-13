@@ -86,9 +86,6 @@ python train.py -net mobilenetcbam
 python train.py -net mobilenetzam
 ``` 
 
-## Conclusion
-
-
 ## Reference
 
 - Paper: [CBAM: Convolutional Block Attention Module](https://arxiv.org/pdf/1807.06521)
