@@ -1,6 +1,8 @@
 """ helper function
 
 author baiyu
+
+modified by yonghye
 """
 
 import sys
@@ -13,7 +15,10 @@ import torchvision
 import torchvision.transforms as transforms
 from resnet import ResNet18
 from resnet_cbam import ResNetCBAM18
-from resnet_zcbam import ResNetZCBAM18
+from resnet_zam import ResNetZAM18
+from mobilenet import MobileNet
+from mobilenet_zam import MobileNetZAM
+from mobilenet_cbam import MobileNetCBAM
 from torch.utils.data import DataLoader
 
 
@@ -27,14 +32,14 @@ def get_network(args, use_gpu=True):
         net = ResNet18()
     elif args.net == 'resnetcbam18':
         net = ResNetCBAM18()
-    elif args.net == 'resnetzcbam18':
-        net = ResNetZCBAM18()
+    elif args.net == 'resnetzam18':
+        net = ResNetZAM18()
     elif args.net == 'mobilenet':
         net = MobileNet()
     elif args.net == 'mobilenetcbam':
         net = MobileNetCBAM()
-    elif args.net == 'mobilenetzcbam':
-        net = MobileNetZCBAM()
+    elif args.net == 'mobilenetzam':
+        net = MobileNetZAM()
     else:
         print('the network name you have entered is not supported yet')
         sys.exit()
