@@ -11,10 +11,6 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 <img src="./figures/ZAM.png" width="80%">
 
-Yeah... I know... my drowing skills are very good. 
-
-If you know the way to draw beautipul cube with gradient using PPT or other tools, tell me about that. 
-
 ### ZCA: Channel Attention Module in ZAM
 
 <img src="./figures/ZCA.png" width="50%">
