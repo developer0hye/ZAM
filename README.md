@@ -57,7 +57,7 @@ Learning Rate:
 | with CBAM |11.39M     |558.45M      |  76.20% | 76.55%      |       76.23%| 76.26%      |76.16%      |76.55%      |76.28% |
 | with ZAM(Max) |  11.22M     |-     | 75.64% | 75.97%|       76.20%| 75.99%      | 75.87%      |76.20%      |75.93%|
 | with ZAM(Avg) |  11.22M     |-      | 76.89% | 76.77%|       76.51%| 76.45%      | 76.68%      |76.89%      |**76.66%**|
-| with ZAM(Avg&Max) |  **11.22M**     |**555.23M**      | 76.46% |       76.95%|       76.62%| 76.34%      |76.12%      |**76.95%**      |76.50%|
+| with ZAM(Avg&Max) |  **11.22M**     |**558.23M**      | 76.46% |       76.95%|       76.62%| 76.34%      |76.12%      |**76.95%**      |76.50%|
 
 The total number of parameters of resnet18 with ZAM is the same as resnet18, but the resnet18 with ZAM outperformes resnet18 in terms of the accuracy and overall overhead of ZAM is quite small in terms of computation too.
 
