@@ -21,7 +21,7 @@ class MobileNetZAM(nn.Module):
                 nn.ReLU(inplace=True),
                 nn.Conv2d(inp, oup, 1, 1, 0, bias=False),
                 nn.BatchNorm2d(oup),
-                ZAM(add_residual = True),
+                ZAM(use_skip_connection = True),
                 nn.ReLU(inplace=True),
             )
 
