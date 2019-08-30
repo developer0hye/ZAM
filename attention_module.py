@@ -77,16 +77,16 @@ class ZeroSpatialAttention(nn.Module):
         return self.sigmoid(avg_out + max_out)
     
 class ZAM(nn.Module):
-    def __init__(self, add_residual = False):
+    def __init__(self, use_skip_connection = False):
         super(ZAM, self).__init__()
 
         self.ca = ZeroChannelAttention()
         self.sa = ZeroSpatialAttention()
-        self.add_residual = add_residual
+        self.use_skip_connection = use_skip_connection
         
     def forward(self, x):
         
-        out = x + x * self.ca(x) if self.add_residual else x * self.ca(x)
-        out = out + out * self.sa(out) if self.add_residual else out * self.sa(out)
+        out = x + x * self.ca(x) if self.use_skip_connection else x * self.ca(x)
+        out = out + out * self.sa(out) if self.use_skip_connection else out * self.sa(out)
         
         return out
