@@ -23,10 +23,6 @@ Is it possible to improve performance of CNNs using attention module that has no
 
 <img src="./figures/Residual Units.png" width="80%">
 
-## ZAM+R Module
-
-<img src="./figures/ZAM+R.png" width="80%">
-
 ### Depthwise Separable convolutions with ZAM+R
 
 <img src="./figures/DWConvModule.png" width="80%">
