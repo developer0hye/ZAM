@@ -44,10 +44,6 @@ def train(epoch):
         loss.backward()
         optimizer.step()
 
-        n_iter = (epoch - 1) * len(cifar100_training_loader) + batch_index + 1
-
-        last_layer = list(net.children())[-1]
-
         print('Training Epoch: {epoch} [{trained_samples}/{total_samples}]\tLoss: {:0.4f}\tLR: {:0.6f}'.format(
             loss.item(),
             optimizer.param_groups[0]['lr'],
